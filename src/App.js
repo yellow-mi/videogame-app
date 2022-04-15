@@ -1,14 +1,14 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
-import VideoGame from './VideoGame';
-
-
-function App() {
-  return (
-    <div className="App">
-      < VideoGame />
-    </div>
-  );
+import Videogame from './Videogame'
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Videogame />
+      </div>
+    );
+  }
 }
 
 export default App;

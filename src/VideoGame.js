@@ -11,7 +11,6 @@ class Videogame extends Component {
       numbGames: 0
     },
     gameList: [],
-    showGamesPlayed: true
   }
 
   handleSubmit = event => {
@@ -60,12 +59,6 @@ class Videogame extends Component {
     const foundUserName = list.find(user => user.userName === actualUserName)
     return !foundUserName
   }
-
-  hideGames = () => {
-    this.setState({
-      showGamesPlayed: false
-  })
-  };
 
   render() {
     return (
